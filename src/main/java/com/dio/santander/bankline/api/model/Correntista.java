@@ -15,8 +15,9 @@ public class Correntista {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	
 	@Column(length = 20)
-	private String CPF;
+	private String cpf;
 	
 	@Column(length = 60)
 	private String nome;
@@ -35,15 +36,19 @@ public class Correntista {
 	public Integer getId() {
 		return id;
 	}
+
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getCPF() {
-		return CPF;
+
+	public String getCpf() {
+		return cpf;
 	}
-	public void setCPF(String cPF) {
-		CPF = cPF;
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
+
 	public String getNome() {
 		return nome;
 	}
